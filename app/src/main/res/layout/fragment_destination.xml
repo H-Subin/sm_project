@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.destination.DestinationFragment">
+
+    <TextView
+        android:id="@+id/text_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="어디 가게?"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="43dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dish" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="43dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coffeecup" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="190dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wardrobe" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="190dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ticket" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="71dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="36dp"
+        android:background="#DFDEDE"
+        android:text="다음 >"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="195dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="132dp"
+        android:text="지역"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
