@@ -9,5 +9,9 @@
         <item name="colorPrimary">@color/main_orange</item>
         <item name="colorPrimaryDark">@color/dark_orange</item>
     </style>
+    <style name="MainTheme." parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/main_orange</item>
+        <item name="colorPrimaryDark">@color/dark_orange</item>
+    </style>
 
 </resources>

@@ -7,4 +7,20 @@
     <string name="id">아이디</string>
     <string name="passward">비밀번호</string>
 
+    <!-- searchAdd -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">어디가게?</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">메인화면</string>
+    <string name="menu_gallery">게시판</string>
+    <string name="menu_slideshow">기타기능</string>
+    <string name="menu_destination">장소맞춤검색</string>
+    <string name="backButton"><![CDATA[< 이전]]></string>
+    <string name="nextButton"><![CDATA[다음 >]]></string>
+
+    <!-- -->
 </resources>
