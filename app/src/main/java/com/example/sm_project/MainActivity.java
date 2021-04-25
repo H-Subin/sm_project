@@ -24,10 +24,16 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private FragmentAdapter adapter;
 
+    private FloatingActionButton fab;
+    private NavController navController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        setSupportActionBar(binding.toolbar);
 
         ivMenu=findViewById(R.id.iv_menu);
         drawerLayout=findViewById(R.id.drawer);
@@ -37,6 +43,26 @@ public class MainActivity extends AppCompatActivity {
         viewPager=findViewById(R.id.view_pager);
         adapter=new FragmentAdapter(getSupportFragmentManager(),1);
 
+        fab = binding.fab;
+
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        navController.setGraph(R.navigation.nav_graph_java);
+        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
+            @Override
+            public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
+                if (destination.getId() == R.id.MainFragment) {
+                    fab.setVisibility(View.VISIBLE);
+                    fab.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            navController.navigate(R.id.action_MainFragment_to_NewPostFragment);
+                        }
+                    });
+                } else {
+                    fab.setVisibility(View.GONE);
+                }
+            }
+        });
 
         setSupportActionBar(toolbar);
 
