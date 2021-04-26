@@ -1,4 +1,4 @@
-package com.google.firebase.quickstart.database.java;
+package com.example.sm_project;
 
 import android.view.View;
 import android.widget.ProgressBar;

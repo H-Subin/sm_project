@@ -9,6 +9,10 @@
     <string name="userid">userid</string>
     <string name="action_settings">설정</string>
 
+
+    <!-- -->
+    <string name="store_Image">가게 이미지</string>
+
     <!-- -->
     <string name="userid_re">userid_re</string>
     <string name="name">음식점</string>

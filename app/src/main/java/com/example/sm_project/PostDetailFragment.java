@@ -1,4 +1,4 @@
-package com.google.firebase.quickstart.database.java;
+package com.example.sm_project;
 
 import android.content.Context;
 import android.os.Bundle;

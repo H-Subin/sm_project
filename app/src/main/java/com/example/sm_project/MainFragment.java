@@ -1,4 +1,5 @@
-package com.google.firebase.quickstart.database.java;
+package com.example.sm_project;
+//package com.google.firebase.quickstart.database.java;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,11 +13,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.navigation.fragment.NavHostFragment;
+//import androidx.navigation.fragment.NavHostFragment;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.quickstart.database.R;
-import com.google.firebase.quickstart.database.databinding.FragmentMainBinding;
+//import com.google.firebase.quickstart.database.R;
+//import com.google.firebase.quickstart.database.databinding.FragmentMainBinding;
 import com.google.firebase.quickstart.database.java.listfragments.MyPostsFragment;
 import com.google.firebase.quickstart.database.java.listfragments.MyTopPostsFragment;
 import com.google.firebase.quickstart.database.java.listfragments.RecentPostsFragment;

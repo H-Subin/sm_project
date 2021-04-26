@@ -1,4 +1,4 @@
-package com.google.firebase.quickstart.database.java;
+package com.example.sm_project;
 
 import android.os.Bundle;
 import android.text.TextUtils;
