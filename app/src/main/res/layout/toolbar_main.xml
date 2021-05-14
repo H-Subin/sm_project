@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.Toolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="55dp"
-    app:contentInsetStart="0dp"
-    android:background="@color/main_orange">
+    android:background="@color/main_orange"
+    app:contentInsetStart="0dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,10 +23,10 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:gravity="center"
-            android:textStyle="bold"
+            android:text="어디가게?"
             android:textColor="@android:color/white"
             android:textSize="18sp"
-            android:text="어디가게?" />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/iv_menu"
