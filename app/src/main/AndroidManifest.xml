@@ -9,13 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sm_project">
-        <activity android:name=".SearchActivity"
+        <activity android:name=".TagAddActivity"
+            android:theme="@style/NoActionBar">
+        </activity>
+        <activity
+            android:name=".SearchActivity"
             android:label="검색"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".SellerSettingActivity"
             android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity_test"
@@ -31,11 +39,6 @@
         <activity
             android:name=".CostSettingActivity"
             android:theme="@style/NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SettingActivity"

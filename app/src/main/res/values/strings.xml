@@ -35,5 +35,7 @@
     <string name="Toast_not_enough_money">천원 이상의 금액을 입력해주세요.</string>
     <string name="Toast_not_10">각 항목들의 합이 10이 아닙니다. \n 다시 설정해주세요</string>
 
+    <string name="str_guide_to_select_tag"> 추가할 태그를 선택하세요. (복수 가능) </string>
+
 
 </resources>

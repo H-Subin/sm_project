@@ -1,7 +1,9 @@
 package com.example.sm_project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,6 +17,7 @@ import java.util.Collections;
 public class SellerSettingActivity extends AppCompatActivity {
     Spinner spinner_store, spinner_city, spinner_town;
     ArrayAdapter<CharSequence> stspin, adspin1, adspin2;
+    CardView cardView_tag;
 
 
 
@@ -36,6 +39,8 @@ public class SellerSettingActivity extends AppCompatActivity {
 
         spinner_store.setAdapter(stspin);
         spinner_city.setAdapter(adspin1);
+
+        cardView_tag = findViewById(R.id.cardview_Tag);
 
         spinner_city.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -137,6 +142,14 @@ public class SellerSettingActivity extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+
+        cardView_tag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplication(), TagAddActivity.class));
+                finish();
             }
         });
     }

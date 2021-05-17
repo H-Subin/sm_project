@@ -88,7 +88,7 @@ public class CostSettingActivity extends AppCompatActivity {
                     case "쇼핑 위주":
                         flag = 0;
                         cardView_mode.setVisibility(View.VISIBLE);
-                        cardView_self_setting.setVisibility(View.GONE);
+                            cardView_self_setting.setVisibility(View.GONE);
                         txt_rest.setText("3");
                         txt_shop.setText("5");
                         txt_cafe.setText("0");
