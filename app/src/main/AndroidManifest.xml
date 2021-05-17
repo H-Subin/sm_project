@@ -15,11 +15,7 @@
         <activity
             android:name=".SellerSettingActivity"
             android:theme="@style/NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity_test"
@@ -34,7 +30,13 @@
             android:theme="@style/NoActionBar" />
         <activity
             android:name=".CostSettingActivity"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SettingActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

@@ -29,5 +29,11 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
+    <!-- Toast 메시지 모음-->
+    <string name="Toast_mode_not_select">모드는 필수적으로 선택해야합니다.</string>
+    <string name="Toast_total_cost_null">전체 금액이 입력되지 않았습니다.</string>
+    <string name="Toast_not_enough_money">천원 이상의 금액을 입력해주세요.</string>
+    <string name="Toast_not_10">각 항목들의 합이 10이 아닙니다. \n 다시 설정해주세요</string>
+
 
 </resources>
