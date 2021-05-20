@@ -18,8 +18,6 @@ public class activity_test extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        TextView txt_test;
-
         txt_test = findViewById(R.id.txt_test);
 
         Intent intent = getIntent();
