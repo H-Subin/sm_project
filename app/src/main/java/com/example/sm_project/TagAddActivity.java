@@ -1,6 +1,7 @@
 package com.example.sm_project;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -34,7 +35,8 @@ public class TagAddActivity extends Activity {
         btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getApplicationContext(), SellerSettingActivity.class));
+                finish();
             }
         });
 
