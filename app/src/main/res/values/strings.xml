@@ -35,5 +35,9 @@
     <string name="Toast_not_enough_money">천원 이상의 금액을 입력해주세요.</string>
     <string name="Toast_not_10">각 항목들의 합이 10이 아닙니다. \n 다시 설정해주세요</string>
 
+    <!-- 카메라 관련 -->
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="please_grant_permission">권한을 허용해 주세요.</string>
 
 </resources>

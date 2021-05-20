@@ -6,122 +6,7 @@
     android:layout_height="match_parent"
     >
 
-    <ImageView
-        android:id="@+id/user2"
-        android:layout_width="86dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/userid2_re"
-        app:layout_constraintEnd_toStartOf="@+id/userid2_star"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userid1_re"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="TODO" />
 
-    <ImageView
-        android:id="@+id/user1"
-        android:layout_width="86dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/userid1_re"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="TODO" />
-
-    <TextView
-        android:id="@+id/userid_re"
-        android:layout_width="310dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="88dp"
-        android:background="#fff899"
-        android:text="@string/userid_re"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.69"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <RatingBar
-        android:id="@+id/userid_star"
-        android:layout_width="238dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="212dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/userid" />
-
-    <EditText
-        android:id="@+id/userid"
-        android:layout_width="78dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="28dp"
-        android:ems="13"
-        android:inputType="textPersonName"
-        android:text="userid"
-        app:layout_constraintEnd_toStartOf="@+id/userid_star"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userid2_re"
-        android:autofillHints="" />
-
-    <TextView
-        android:id="@+id/userid2_re"
-        android:layout_width="240dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:text="userid2_re"
-        android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@+id/user2"
-        app:layout_constraintTop_toBottomOf="@+id/user2" />
-
-    <TextView
-        android:id="@+id/userid1_re"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="12dp"
-        android:text="@string/userid1_re"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/user2"
-        app:layout_constraintEnd_toEndOf="@+id/userid2_star"
-        app:layout_constraintStart_toEndOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/user1" />
-
-    <RatingBar
-        android:id="@+id/userid2_star"
-        android:layout_width="238dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/user2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/user2"
-        app:layout_constraintTop_toBottomOf="@+id/userid1_re"
-        app:layout_constraintVertical_bias="0.75" />
-
-    <RatingBar
-        android:id="@+id/userid1_star"
-        android:layout_width="238dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="6dp"
-        app:layout_constraintBottom_toBottomOf="@+id/user1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toEndOf="@+id/user1"
-        app:layout_constraintTop_toTopOf="@+id/user1"
-        app:layout_constraintVertical_bias="0.631" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -163,18 +48,11 @@
             android:text="찜" />
     </com.google.android.material.tabs.TabLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="115dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#ec6941"
-        android:text="@string/re_button"
-        app:iconTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="#FFFFFF" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"/>
 
     <TextView
         android:id="@+id/name"
@@ -205,5 +83,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_search"
         android:contentDescription="TODO" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
