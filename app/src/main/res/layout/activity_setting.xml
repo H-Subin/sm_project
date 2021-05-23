@@ -22,15 +22,17 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="385dp"
-        android:layout_height="470dp"
-        android:layout_marginLeft="13dp"
+        android:layout_width="390dp"
+        android:layout_height="377dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/setting_change_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:layout_constraintVertical_bias="0.746">
 
         <LinearLayout
@@ -47,7 +49,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/setting_id_before"
+                android:id="@+id/setting_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
@@ -71,11 +73,11 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/setting_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="수빈(db의 기존 이름)"
+                android:hint="이름을 입력하세요"
                 android:inputType="textPersonName" />
         </LinearLayout>
 
@@ -125,35 +127,13 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/text_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="이메일"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/setting_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="hsubin32@gamil.com(db의 기존 이메일)"
-                android:inputType="textEmailAddress" />
-        </LinearLayout>
-
     </LinearLayout>
 
     <Button
         android:id="@+id/setting_change_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="79dp"
+        android:layout_marginStart="84dp"
         android:text="변경"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="@+id/setting_cancel_btn" />
@@ -166,8 +146,6 @@
         android:layout_marginBottom="98dp"
         android:text="취소"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout" /><![CDATA[
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout" />
 
-    />
-]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

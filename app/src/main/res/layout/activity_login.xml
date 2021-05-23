@@ -5,6 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="207dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="346dp"
+        app:layout_constraintBottom_toTopOf="@+id/title_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_trp" />
+
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
@@ -17,81 +29,63 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/login_passward"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="18dp"
-        android:ems="10"
-        android:hint="@string/passward"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/warning_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_id" />
-
-    <EditText
-        android:id="@+id/login_id"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="14dp"
+        android:id="@+id/login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/id"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/login_passward"
-        app:layout_constraintEnd_toEndOf="@+id/login_passward"
-        app:layout_constraintStart_toStartOf="@+id/login_passward"
-        app:layout_constraintTop_toBottomOf="@+id/title_text" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_passward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/passward"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/login_email"
+        app:layout_constraintStart_toStartOf="@+id/login_email"
+        app:layout_constraintTop_toBottomOf="@+id/login_email" />
 
     <Button
         android:id="@+id/login_btn"
-        android:layout_width="285dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="33dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="@color/main_yellow"
         android:text="로그인"
-        app:layout_constraintBottom_toTopOf="@+id/join_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/warning_text" />
+        app:layout_constraintEnd_toEndOf="@+id/login_passward"
+        app:layout_constraintStart_toStartOf="@+id/login_passward"
+        app:layout_constraintTop_toBottomOf="@+id/login_passward" />
 
     <Button
         android:id="@+id/join_btn"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="@color/main_yellow"
         android:text="회원가입"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login_btn"
+        app:layout_constraintStart_toStartOf="@+id/login_btn"
         app:layout_constraintTop_toBottomOf="@+id/login_btn" />
 
     <TextView
-        android:id="@+id/warning_text"
+        android:id="@+id/find_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/login_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:text="비밀번호 찾기"
+        app:layout_constraintEnd_toEndOf="@+id/login_passward"
+        app:layout_constraintStart_toStartOf="@+id/login_passward"
         app:layout_constraintTop_toBottomOf="@+id/login_passward" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="207dp"
-        android:layout_height="139dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/title_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_trp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

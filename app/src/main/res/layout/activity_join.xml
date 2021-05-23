@@ -6,120 +6,131 @@
     android:layout_height="match_parent"
     tools:context=".JoinActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="회원 가입"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="207dp"
-        android:layout_height="0dp"
+        android:layout_width="167dp"
+        android:layout_height="81dp"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="118dp"
-        app:layout_constraintBottom_toTopOf="@+id/check_btn"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_trp" />
 
     <EditText
-        android:id="@+id/input_id"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="2dp"
-        android:ems="10"
-        android:hint="@string/id"
-        android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/check_btn"
-        app:layout_constraintEnd_toStartOf="@+id/check_btn"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
         android:id="@+id/input_name"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
         android:ems="10"
         android:hint="이름"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/input_email"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
-        android:id="@+id/input_email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="28dp"
-        android:ems="10"
-        android:hint="이메일"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/join_submit_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_pass_confirm" />
+    <RadioGroup
+        android:id="@+id/userGr"
+        android:layout_width="86dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/input_pass_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/input_pass_confirm">
 
-    <EditText
-        android:id="@+id/input_pass"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="22dp"
-        android:ems="10"
-        android:hint="@string/passward"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/input_pass_confirm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/check_btn" />
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일반인" />
+
+        <RadioButton
+            android:id="@+id/owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가게주" />
+    </RadioGroup>
 
     <EditText
         android:id="@+id/input_pass_confirm"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="비밀번호 확인"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/input_email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input_pass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_pass"
         app:layout_constraintTop_toBottomOf="@+id/input_pass" />
 
-    <Button
-        android:id="@+id/check_btn"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="23dp"
-        android:text="중복확인"
-        app:layout_constraintBottom_toTopOf="@+id/input_pass"
+        android:layout_marginTop="4dp"
+        android:text="회원 가입"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/input_id"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/join_submit_btn"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="121dp"
         android:text="가입"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input_pass_confirm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_pass_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/userGr" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/input_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_name"
+        app:layout_constraintTop_toBottomOf="@+id/input_name" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="58dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:text="사용자"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/userGr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_pass_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/input_pass_confirm" />
+
+    <EditText
+        android:id="@+id/input_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/passward"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/input_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_email"
         app:layout_constraintTop_toBottomOf="@+id/input_email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

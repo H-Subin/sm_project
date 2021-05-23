@@ -7,14 +7,14 @@
     tools:context=".ProductAddActivity">
 
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:text="상품명 *"
-        android:textColor="@color/main_orange"
-
         android:textSize="24sp"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,104 +22,93 @@
         android:id="@+id/txt_product_name"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="111dp"
         android:layout_marginEnd="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="180dp"
-        android:textColor="@color/main_orange"
+        android:layout_marginTop="16dp"
         android:text="상품가격 *"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/txt_product_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_product_name" />
 
     <EditText
-        android:id="@+id/txt_droduct_price"
+        android:id="@+id/txt_product_price"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="56dp"
         android:layout_marginEnd="6dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_product_name" />
-
-    <Button
-        android:id="@+id/btn_prod_add_cancle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="80dp"
-        android:text="취소"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_prod_add_submit"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btn_prod_add_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="80dp"
-        android:text="등록"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_prod_add_cancle" />
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="288dp"
-        android:textColor="@color/main_orange"
+        android:layout_marginTop="20dp"
         android:text="상품이미지"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="* 표시가 된 항목은 반드시 입력해야합니다."
-        android:textColor="#A13030"
-        app:layout_constraintBottom_toTopOf="@+id/btn_prod_add_submit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/mgview_product"
-        android:layout_width="180dp"
-        android:layout_height="190dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="144dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_upload_productImg"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_baseline_image_search_24" />
+        app:layout_constraintStart_toStartOf="@+id/txt_product_price"
+        app:layout_constraintTop_toBottomOf="@+id/txt_product_price" />
 
     <Button
-        android:id="@+id/btn_upload_productImg"
+        android:id="@+id/bt_choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:text="사진 업로드하기"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="180dp"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toStartOf="@+id/bt_choose"
+        app:layout_constraintTop_toBottomOf="@+id/bt_choose"
+        app:srcCompat="@drawable/ic_baseline_image_search_24" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="* 표시가 된 항목은 반드시 입력해야합니다."
+        android:textColor="#A13030"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_preview" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="취소"
+        app:layout_constraintEnd_toStartOf="@+id/bt_upload"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/bt_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="등록"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_cancel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
